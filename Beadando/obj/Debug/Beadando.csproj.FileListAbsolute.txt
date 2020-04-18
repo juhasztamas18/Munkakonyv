@@ -1,0 +1,10 @@
+G:\Programozás\Beadando\Beadando\Beadando\bin\Debug\Beadando.exe.config
+G:\Programozás\Beadando\Beadando\Beadando\bin\Debug\Beadando.exe
+G:\Programozás\Beadando\Beadando\Beadando\bin\Debug\Beadando.pdb
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.csprojResolveAssemblyReference.cache
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.Properties.Resources.resources
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.csproj.GenerateResource.Cache
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.exe
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.pdb
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.FoAblak.resources
+G:\Programozás\Beadando\Beadando\Beadando\obj\Debug\Beadando.BelepesFrm.resources
