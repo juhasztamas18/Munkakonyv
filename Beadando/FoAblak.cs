@@ -13,7 +13,7 @@ namespace Beadando
 {
     public partial class FoAblak : Form
     {
-        string fileUt = "G:\\Programozás\\Beadando\\Beadando\\" + kiaz.Nev + "Munkasok.txt";
+        string fileUt = "C:\\Users\\Public" + kiaz.Nev + "Munkasok.txt";
         static Felhasznalo kiaz;
         List<Munkas> munkasok = new List<Munkas>();
         public FoAblak()

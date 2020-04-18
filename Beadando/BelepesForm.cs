@@ -13,14 +13,15 @@ namespace Beadando
 {
     public partial class BelepesFrm : Form
     {
+        string fileUt = "C:\\Users\\Public\\Felhasznalok.txt";
         List<Felhasznalo> lista = new List<Felhasznalo>();
         public BelepesFrm()
         {
             InitializeComponent();
 
-            if (File.Exists("G:\\Programozás\\Beadando\\Beadando\\Felhasznalok.txt"))
+            if (File.Exists(fileUt))
             {
-                StreamReader sR = new StreamReader("G:\\Programozás\\Beadando\\Beadando\\Felhasznalok.txt", Encoding.UTF8);
+                StreamReader sR = new StreamReader(fileUt, Encoding.UTF8);
                 while (!sR.EndOfStream)
                 {
                     string[] s = sR.ReadLine().Split(';');
@@ -56,7 +57,8 @@ namespace Beadando
                     lista.Add(felhasznalo);
                     tbJelszUjra.Text = felhasznaloTb.Text = jelszoTb.Text = String.Empty;
                     cbRegisztral.Checked = false;
-                    StreamWriter sW = new StreamWriter("G:\\Programozás\\Beadando\\Beadando\\Felhasznalok.txt", true, Encoding.UTF8);
+                    MessageBox.Show("Sikeresen regisztrált!");
+                    StreamWriter sW = new StreamWriter(fileUt, true, Encoding.UTF8);
                     sW.WriteLine(felhasznalo.Nev + ";" + felhasznalo.Jelszo);
                     sW.Close();
                 }
@@ -79,6 +81,11 @@ namespace Beadando
                 MessageBox.Show("Téves felhasznaló vagy jelszó");
                 this.DialogResult = DialogResult.Cancel;
             }
+        }
+
+        private void BelepesFrm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
